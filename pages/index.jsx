@@ -1,21 +1,22 @@
 import Head from "next/head";
+import Hero from "../components/Home/Hero";
+import Videos from "../components/Home/Videos";
+import Funfacts from "../components/Home/Funfacts";
+import Services from "../components/Home/Services";
+import Blog from "../components/Home/Blog";
+import Newslatter from "../components/Home/Newslatter";
+import Contact from "../components/Home/Contact";
 
 export default function Home() {
   return (
-    <div style={{ overflow: "hidden" }}>
-      <main
-        style={{
-          display: "flex",
-          width: "100vw",
-          height: "100vh",
-          justifyContent: "center",
-          alignItems: "center",
-          overflow: "hidden",
-        }}
-      >
-        <h1>Happy hacking !!</h1>
-        <h2>Next Js Ecommerce</h2>
-      </main>
-    </div>
+    <>
+      <Hero />
+      <Videos />
+      <Funfacts />
+      <Services />
+      <Blog />
+      <Newslatter />
+      <Contact />
+    </>
   );
 }
