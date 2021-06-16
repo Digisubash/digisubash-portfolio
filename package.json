@@ -43,5 +43,12 @@
     "svg-sprite-loader": "^5.2.1",
     "terser-webpack-plugin": "^5.1.1",
     "webp-loader": "^0.6.0"
-  }
+  },
+  "name": "digisubash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vinocrzy/digisubash.git",
+  "author": "vinocrzy <vinoth.vinothkanna.kanna2@gmail.com>",
+  "license": "MIT",
+  "private": true
 }
