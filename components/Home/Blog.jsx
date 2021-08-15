@@ -35,7 +35,7 @@ const Blog = () => {
               <h2>
                 Latest{" "}
                 <span className="featured">
-                  <span>News</span>
+                  <span>Blogs</span>
                 </span>
               </h2>
               <p>
