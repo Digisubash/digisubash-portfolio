@@ -2522,9 +2522,9 @@ header .navbar-expand .navbar-brand .featured .first {
   transform: initial;
 }
 
-.full-slider {
-  cursor: w-resize;
-}
+// .full-slider {
+//   cursor: w-resize;
+// }
 
 .full-slider .inner,
 .no-slider .inner {
@@ -3092,6 +3092,7 @@ header .navbar-expand .navbar-brand .featured .first {
   position: relative;
   z-index: 1;
   width: 100%;
+  height: 100%;
   padding: 45px;
   border-radius: 10px;
   border: none;
