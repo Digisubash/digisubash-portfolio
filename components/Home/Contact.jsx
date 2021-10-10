@@ -79,9 +79,9 @@ const Contact = () => {
           </div>
           <div className="col-12 col-md-4">
             <div className="contacts">
-              <h4>Example Inc.</h4>
+              {/* <h4>Example Inc.</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p>Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+              <p>Praesent diam lacus, dapibus sed imperdiet consectetur.</p> */}
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <a href="#" className="nav-link">
