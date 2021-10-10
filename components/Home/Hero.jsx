@@ -27,11 +27,11 @@ function Hero() {
                   <h1
                     data-aos="zoom-in"
                     data-aos-delay="400"
-                    class="title effect-static-text aos-init aos-animate"
+                    className="title effect-static-text aos-init aos-animate"
                   >
                     Seo Analyst
                   </h1>
-                  <p class="description aos-init aos-animate">
+                  <p className="description aos-init aos-animate">
                     Our focus is to map the technologies to solve the business
                     transformation, offering services.
                   </p>

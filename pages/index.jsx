@@ -7,16 +7,39 @@ import Blog from "../components/Home/Blog";
 import Newslatter from "../components/Home/Newslatter";
 import Contact from "../components/Home/Contact";
 
-export default function Home() {
+export const importBlogPosts = async () => {
+  const markdownFiles = require
+    .context("../content", false, /\.md$/)
+    .keys()
+    .map((relativePath) => relativePath.substring(2));
+  return Promise.all(
+    markdownFiles.map(async (path) => {
+      const markdown = await import(`../content/${path}`);
+      return { ...markdown, slug: path.substring(0, path.length - 3) };
+    })
+  );
+};
+
+export default function Home({ postsList }) {
   return (
     <>
       <Hero />
       <Videos />
       <Funfacts />
       <Services />
-      <Blog />
+      <Blog posts={postsList} />
       <Newslatter />
       <Contact />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const postsList = await importBlogPosts();
+
+  return {
+    props: {
+      postsList,
+    },
+  };
 }

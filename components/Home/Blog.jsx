@@ -7,8 +7,10 @@ import AppContext from "../../context/AppContext";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Blog = () => {
+const Blog = ({ posts }) => {
   const { deviceWidth } = useContext(AppContext);
+
+  console.log(posts);
 
   const isMobile = deviceWidth < 500;
   const isTab = deviceWidth < 800;
@@ -54,6 +56,39 @@ const Blog = () => {
           </div>
           <div>
             <Slider {...sliderSettings} className="blog-swaiper">
+              {/* {posts.map((post, index) => (
+                <div className="swiper-slide slide-center item" key={index}>
+                  <div className="row card p-0 text-center">
+                    <div className="image-over">
+                      <img src={post.attributes.thumbnail} alt="Lorem ipsum" />
+                    </div>
+                    <div
+                      className="
+                      card-footer
+                      d-lg-flex
+                      align-items-center
+                      justify-content-center
+                    "
+                    >
+                      <a href="#" className="d-lg-flex align-items-center">
+                        <i className="icon-user"></i>Digi Subash
+                      </a>
+                      <a href="#" className="d-lg-flex align-items-center">
+                        <i className="icon-clock"></i>16 Days Ago
+                      </a>
+                    </div>
+                    <div className="card-caption col-12 p-0">
+                      <div className="card-body">
+                        <a href="#">
+                          <h4>{post.attributes.title}</h4>
+                          <p>{post.attributes.description}</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))} */}
+
               <div className="swiper-slide slide-center item">
                 <div className="row card p-0 text-center">
                   <div className="image-over">

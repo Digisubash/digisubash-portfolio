@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "axios": "^0.21.1",
     "framer-motion": "^4.1.2",
+    "frontmatter-markdown-loader": "^3.6.3",
     "graphql": "^15.5.0",
     "image-trace-loader": "^1.0.2",
     "imagemin-gifsicle": "^7.0.0",
